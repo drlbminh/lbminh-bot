@@ -1,29 +1,15 @@
 # import pdb
-# pdb.set_trace()
-# import os
-# import time
-#time.sleep(180)
-#os.system('pulseaudio -D')
-#time.sleep(1)
-#os.system('sudo pacmd set-source-volume 1 200000')
-#time.sleep(1)
-#os.system('sudo pulseaudio --start')
-#time.sleep(1)
 
-
-
+import signal
+import execute
+import sys
+signal.signal(signal.SIGTSTP, execute.handler)
+signal.signal(signal.SIGINT, execute.signal_handler)
 import dem
 import threading
-import execute
+import time
 
 
 
+dem.mainloop()
 
-
-
-
-
-execute.run_thread(dem.mainloop)
-# execute.run_thread(gu.showGUI)
-# execute.run_thread(gu.background)
-# execute.run_thread(gu.key_watch)

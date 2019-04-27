@@ -1,35 +1,15 @@
-
-# nếu bản 0.84 trở lên thì nhập right, không thì nhập left
-version_above084: right
-#***************(QUAN TRỌNG XIN CHÚ Ý)************** nhập vào đường dẫn vào hass đang hoạt động, luôn cả https,http và port nếu có - KHÔNG DÙNG DẠNG HTTPS://IP:8123 
-domain: https://nhap-domain.duckdns.org
-
-#***************(QUAN TRỌNG XIN CHÚ Ý)************** - nếu version trên 0.84 thì nhập long-lived token, dưới 0.84 thì nhập trong hass_password
-longlived-token: eyJ0eXAiOi
-#***************(QUAN TRỌNG XIN CHÚ Ý)************** - TRỊ SỐ 0,1 TƯƠNG ỨNG KHÔNG DÙNG HOẶC DÙNG API - NẾU DÙNG API THÌ SẼ NHANH VÀ CHÍNH XÁC HƠN
-api_active: 0
-#***************(QUAN TRỌNG XIN CHÚ Ý)************** ------ NẾU API_ACTIVE: 1 THÌ CONFIG TÊN JSON BÊN DƯỚI- NẾU API_ACTIVE: 0 THÌ BỎ QUA
-google_application_credentials: botallis.json
-
-
-
-
+api_active: 1
+api_darksky: null
+api_fpt: null
+domain: https://
+google_application_credentials: hehe.cucu
 hass_password: pass
-# model là file training giọng nói trên snowboy
-model: subex.umdl
 hotword: subex
-sensitivity: 0.5
-# giọng trả lời, api của fpt, các bạn tự đăng ký lấy api để dùng cho riêng mình (để nhanh là ổn định)
-# male, female
-voice: male 
-#co dung api khong, 1 (có) hoặc 0 (không)
-
-#api_fpt
-api_fpt: 
-# api darksky để lấy thông tin thời tiết (tự đăng ký hoặc lấy bên hass đưa vào)
-api_darksky: 
-# file credential của google (tự đăng ký)
-
 led_do: 15
 led_xanh: 14
+longlived-token: cl1teS2AX4
+model: subex.umdl
 reminder: 1
+sensitivity: 0.9
+version_above084: right
+voice: male
